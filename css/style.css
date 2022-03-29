@@ -1,0 +1,202 @@
+.navbar{
+    background: url('./images/The_Strayed_Art.jpg');
+  }
+  .wrapper{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: #000000;
+  }
+  .txt{
+    color: #ffffff;
+    background: #000000;
+    font-size: 7em;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding: .2em;
+  }
+  .txt::before{
+    content: 'THE STRAYED';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(1px);
+  }
+  .neon-wrapper{
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+  }
+  .gradient{
+    background: linear-gradient(117.03897150091609deg, rgba(37, 63, 79,1) 6.933872502378687%,rgba(181, 103, 127,1) 52.640342530922936%,rgba(204, 198, 186,1) 93.99381541389153%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+  
+  }
+  .dodge{
+    background: radial-gradient(circle, white, black 35%) center / 25% 25%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+  }
+  @keyframes dodge-area{
+    to {
+      transform: translate(50%, 50%);
+    }
+  }
+  
+  * 
+  {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: url('./images/The_Strayed_Art.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  a{
+    width: 13em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    background-color: rgb(20, 220, 20, .9);
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: 0.5s;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+  a:nth-child(1){
+    filter: hue-rotate(290deg)
+  }
+  a:nth-child(3){
+    filter: hue-rotate(110deg)
+  }
+  a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+  }
+  a span {
+    position: absolute;
+    display: block;
+  }
+  a span:nth-child(1){
+    top: 0;
+    left: -100;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+  }
+  @keyframes animate1{
+    0% {
+      left: -100%;
+    }
+    50%, 100% {
+      left: 100%;
+    }
+  }
+  a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  @keyframes animate2{
+    0% {
+      top: -100%;
+    }
+    50%, 100% {
+      top: 100%;
+    }
+  }
+  a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes animate3{
+    0% {
+      right: -100%;
+    }
+    50%, 100% {
+      right: 100%;
+    }
+  }
+  a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  @keyframes animate4{
+    0% {
+      bottom: -100%;
+    }
+    50%, 100% {
+      bottom: 100%;
+    }
+  }
+  
+  iframe{
+    margin: 1em;
+  }
+  
+  /* Responsive Section */
+  @media screen and (max-width: 500px){
+    .txt{
+      font-size: 5em;
+    }
+   a{
+     display: block;
+   }
+  }
+  @media screen and (max-height: 500px){
+  
+    section {
+      height: auto;
+      width: 100%;
+    }
+    form{
+      height: 100vh;
+    }
+    .card{
+      width: 15em;
+    }
+  }
