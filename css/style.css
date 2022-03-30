@@ -181,7 +181,7 @@
   /* Responsive Section */
   @media screen and (max-width: 500px){
     .txt{
-      font-size: 5em;
+      font-size: xx-large;
     }
    a{
      display: block;
@@ -191,7 +191,9 @@
    }
   }
   @media screen and (max-height: 500px){
-  
+    .txt {
+        font-size: xx-large;
+    }
     section {
       height: auto;
       width: 100%;
