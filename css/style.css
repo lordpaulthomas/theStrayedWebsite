@@ -181,7 +181,7 @@
   /* Responsive Section */
   @media screen and (max-width: 500px){
     .txt{
-      font-size: xx-large;
+      font-size: 3em;
     }
    a{
      display: block;
@@ -192,7 +192,7 @@
   }
   @media screen and (max-height: 500px){
     .txt {
-        font-size: xx-large;
+        font-size: 3em;
     }
     section {
       height: auto;
@@ -206,5 +206,16 @@
     }
     .card{
       width: 15em;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
   }
