@@ -186,12 +186,18 @@
    a{
      display: block;
    }
+   .gradient{
+       visibility: hidden;
+   }
   }
   @media screen and (max-height: 500px){
   
     section {
       height: auto;
       width: 100%;
+    }
+    .gradient{
+        visibility: hidden;
     }
     form{
       height: 100vh;
